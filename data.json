@@ -1,0 +1,308 @@
+{
+  "1. ECA": {
+    "name": "ECA - Economizer Actuator",
+    "image": "https://cdn.glitch.global/a1b1a317-1c06-4953-8f0a-8c480eeb0bdc/ECA.webp?v=1711456230783",
+    "model": "https://cdn.glitch.global/a1b1a317-1c06-4953-8f0a-8c480eeb0bdc/ECA_Light.glb?v=1711459179130",
+    "camera_orbit": "45deg 90deg 10m",
+    "camera_target": "0m 0.2m 0m",
+    "details": [
+      {
+        "subheader": "",
+        "description": "<p>The Economizer Actuator (ECA) is a module that controls the economizer, which is a system that brings in outside air to ventilate the building. The ECA can be used with or without an options module, and it has a detachable communicating module that can be replaced separately.</p>"
+      },
+      {
+        "subheader": "Inputs:",
+        "description": "<p>The ECA accepts inputs from a variety of sensors, including:</p><ul>  <li>Mixed air sensors</li>  <li>Return air sensors</li>  <li>Outdoor humidity sensors</li>  <li>Return air humidity sensors</li>  <li>CO2 sensors</li>  <li>Remote minimum potentiometers</li></ul>"
+      },
+      {
+        "subheader": "Outputs:",
+        "description": "<p>The ECA has outputs to control the power exhaust relay and the economizer dampers.</p>"
+      },
+      {
+        "subheader": "Function:",
+        "description": "<p>The ECA monitors the inputs from the sensors and uses this information to control the economizer dampers. The ECA can be set to operate in one of three modes:</p><ul>  <li><strong>Ambient temperature:</strong> The ECA controls the economizer cycle by sensing the outside air dry bulb temperature.</li>  <li><strong>Reference enthalpy:</strong> The ECA controls the economizer cycle by sensing the outdoor air humidity.</li>  <li><strong>Comparative enthalpy:</strong> The ECA uses a humidity sensor and a temperature sensor in both the return air stream and the outdoor air stream to determine which conditions are best suited for maintaining the zone temperature.</li></ul>"
+      },
+      {
+        "subheader": "Troubleshooting:",
+        "description": "<p>If the economizer is not operating properly, the ECA may be faulty. To troubleshoot the ECA, follow these steps:</p><ol>  <li>Check the power supply to the ECA.</li>  <li>Check the wiring connections to the ECA.</li>  <li>Check the sensors that are connected to the ECA.</li>  <li>Replace the ECA if it is faulty.</li></ol>"
+      }
+    ]
+  },
+
+  "2. Smoke Detector": {
+    "name": "Return Air Smoke Detector",
+    "image": "https://cdn.glitch.global/a1b1a317-1c06-4953-8f0a-8c480eeb0bdc/SmokeDetector.webp?v=1711456222828",
+    "model": "https://cdn.glitch.global/a1b1a317-1c06-4953-8f0a-8c480eeb0bdc/Smoke%20detector.glb?v=1711464557331",
+    "camera_orbit": "60deg 90deg 3m",
+    "camera_target": "0m 0.1m 0m",
+    "details": [
+      {
+        "subheader": "Overview:",
+        "description": "<ul><li>Designed to shut off the unit if smoke is sensed in the return air stream</li><li>Samples the airflow entering the unit at the return air opening</li><li>Air velocity entering the unit must be between 500-4000 ft/min for proper smoke sensing</li></ul>"
+      },
+      {
+        "subheader": "Function:",
+        "description": "<ul><li>Samples return air to detect smoke</li><li>Used to detect smoke in air conditioning or ventilation ducts</li><li>Provides high limit 'shutdown' of the unit and requires manual reset</li></ul>"
+      },
+      {
+        "subheader": "Installation:",
+        "description": "<ul><li>Factory installed in downflow discharge position, no additional setup needed</li><li>For horizontal discharge, detector must be rotated 180 degrees with holes facing return air ductwork</li></ul>"
+      },
+      {
+        "subheader": "Maintenance:",
+        "description": "<ul><li>Airflow must be adequate for proper sampling, require regular filter changes and coil cleaning</li><li>Periodic checks and maintenance procedures required to ensure proper functioning</li></ul>"
+      }
+    ]
+  },
+
+  "3. Filters": {
+    "name": "Filters",
+    "image": "https://cdn.glitch.global/a1b1a317-1c06-4953-8f0a-8c480eeb0bdc/Filter.webp?v=1711456234577",
+    "model": "https://cdn.glitch.global/a1b1a317-1c06-4953-8f0a-8c480eeb0bdc/Filter.glb?v=1711466788864",
+    "camera_orbit": "90deg 110deg 10m",
+    "camera_target": "0m 0.4m 0m",
+    "details": [
+      {
+        "subheader": "Inspection",
+        "description": "<ul><li>Inspect the return air filters as part of the monthly maintenance procedures with the unit powered off and locked out.</li><li>Airflow is affected by accumulation of dirt on coils and filters, so regular filter checks help ensure adequate sampling by the return air smoke detector.</li></ul>"
+      },
+      { 
+        "subheader": "Cleaning/Replacement",
+        "description": "<ul><li>Clean or replace filters if necessary during inspection. Replace per the interval in the unit Service Facts.</li><li>Leave any filter removal tools in the unit after servicing filters.</li></ul>"
+      },
+      { 
+        "subheader": "Importance of Filters",
+        "description": "<ul><li>Operating the unit without filters is not recommended. Filters must be kept clean to allow proper airflow.</li></ul>"
+      }
+    ]
+  },
+  
+    "4. Evaporator Coil": {
+    "name": "Evaporator Coil",
+    "image": "https://cdn.glitch.global/a1b1a317-1c06-4953-8f0a-8c480eeb0bdc/EvaporatorCoil.webp?v=1711456231880",
+    "model": "https://cdn.glitch.global/a1b1a317-1c06-4953-8f0a-8c480eeb0bdc/Evaporator_Coil.glb?v=1711467908794",
+    "camera_orbit": "150deg 90deg 9m",
+    "camera_target": "0m 0.5m 0m",
+    "details": [
+      {
+        "subheader": "Inspection and Maintenance",
+        "description": "<ul><li>Inspect evaporator coils for dirt, bent fins, etc. Clean if necessary according to cleaning procedures</li><li>Check for blockages in drain pans and condensate piping</li></ul>"
+      },
+      { 
+        "subheader": "Coil Cleaning:",
+        "description": "<p>For Microchannel (MCHE) Coils:</p><ul><li>Use pressurized water or air only</li><li>Pressure should be no greater than 600psi</li><li>Do NOT use any detergents</li><li>Spray perpendicular to the coil face</li></ul><p>For Round Tube Plate Fin (RTPF) Coils:</p><ul><li>Remove access panels</li><li>Protect electrical components</li><li>Straighten bent fins</li><li>Mix cleaning solution (detergent + water, heat to max 150°F)</li><li>Spray solution on coil (max 600 psi, 15° spray angle)</li><li>Allow solution to stand for 5 minutes</li><li>Rinse thoroughly with cool clean water</li><li>Repeat steps if still dirty</li><li>Reinstall removed components</li></ul>"
+      }
+    ]
+  },
+  
+      "5. Indoor Blower Fan": {
+    "name": "Indoor Blower Fan",
+    "image": "https://cdn.glitch.global/a1b1a317-1c06-4953-8f0a-8c480eeb0bdc/Motorunit.webp?v=1711456237110",
+    "model": "https://cdn.glitch.global/a1b1a317-1c06-4953-8f0a-8c480eeb0bdc/Indoor%20Fan%20and%20Motor.glb?v=1711469973566",
+    "camera_orbit": "90deg 90deg 8m",
+    "camera_target": "0m 0.5m 0m",
+    "details": [
+      {
+        "subheader": "Fan Speed Adjustment",
+        "description": "<ul><li>Fan speed is changed by opening or closing the adjustable motor sheave</li><li>To increase fan RPM, loosen set screw and turn sheave clockwise</li><li>To decrease fan RPM, loosen set screw and turn sheave counterclockwise</li></ul>"
+      },
+      { 
+        "subheader": "Belt Maintenance",
+        "description": "<ul><li>Inspect belts periodically and replace if frayed or worn</li><li>Use matched belts on dual belt systems</li><li>Don't overstretch belts when installing</li><li>Adjust belt tension to proper deflection force</li></ul>"
+      },
+      { 
+        "subheader": "Fan Performance Testing",
+        "description": "<ul><li>Measure actual RPM</li><li>Measure amp draw and calculate BHP</li><li>Use fan performance tables to determine operating CFM based on RPM and BHP</li><li>Adjust fan speed if CFM is too high or too low</li><li>Recheck belt tension after 2-3 days as tension may decrease as new belts wear in</li></ul>"
+      }
+    ]
+  },
+  
+        "6. Inducer Motor": {
+    "name": "Inducer Motor",
+    "image": "https://cdn.glitch.global/a1b1a317-1c06-4953-8f0a-8c480eeb0bdc/Fan%20assembly%20-%20inducer%20motor%20-%20IND.webp?v=1711456232742",
+    "model": "https://cdn.glitch.global/a1b1a317-1c06-4953-8f0a-8c480eeb0bdc/Inducer%20Motor.glb?v=1711471694821",
+    "camera_orbit": "90deg 90deg 7m",
+    "camera_target": "0m 0m 0m",
+    "details": [
+      {
+        "subheader": "Overview:",
+        "description": "<p>The inducer motor is a crucial component in HVAC Roof Top Units (RTUs), enhancing safety and efficiency by managing combustion gases and airflow.</p>"
+      },
+      { 
+        "subheader": "Function:",
+        "description": "<p>It draws combustion gases from the heat exchanger to the outside, maintaining optimal combustion and initiating the ignition process by ensuring fresh air is present.</p>"
+      },
+      { 
+        "subheader": "Location:",
+        "description": "<p>Located near the heat exchanger in HVAC RTUs, it sits at the exhaust system's start, directing gases out safely.</p>"
+      }
+    ]
+  },
+  
+         "7. Compressor": {
+    "name": "Compressor",
+    "image": "https://cdn.glitch.global/a1b1a317-1c06-4953-8f0a-8c480eeb0bdc/Compressor.webp?v=1711456226097",
+    "model": "https://cdn.glitch.global/a1b1a317-1c06-4953-8f0a-8c480eeb0bdc/Compressor.glb?v=1711472027173",
+    "camera_orbit": "90deg 90deg 8m",
+    "camera_target": "0m 0m 0m",
+    "details": [
+      {
+        "subheader": "Overview",
+        "description": "<p>The compressor is an essential part of HVAC Roof Top Units (RTUs), responsible for refrigerant circulation and temperature regulation.</p>"
+      },
+      { 
+        "subheader": "Function:",
+        "description": "<p>It compresses refrigerant gas, raising its pressure and temperature, enabling heat exchange and cooling or heating as required. This process is central to the HVAC cycle, affecting efficiency and climate control.</p>"
+      },
+      { 
+        "subheader": "Location:",
+        "description": "<p>Situated within the RTU's outdoor unit, the compressor acts as the system's heart, pivotal in the refrigeration cycle by pumping refrigerant between the evaporator and condenser coils.</p>"
+      }
+    ]
+  },
+
+  "8. Outdoor Fan": {
+    "name": "Outdoor Fan",
+    "image": "https://cdn.glitch.global/a1b1a317-1c06-4953-8f0a-8c480eeb0bdc/OD%20Fan%20and%20Motor.webp?v=1711457755553",
+    "model": "https://cdn.glitch.global/a1b1a317-1c06-4953-8f0a-8c480eeb0bdc/OD%20Fan%20and%20Motor.glb?v=1711535564410",
+    "camera_orbit": "90deg 75deg 3m",
+    "camera_target": "0m 0m 0m",
+    "details": [
+      {
+        "subheader": "Overview",
+        "description": "<p>The outdoor fan is a key component in Roof Top Units (RTUs), crucial for maintaining system efficiency and heat exchange.</p>"
+      },
+      { 
+        "subheader": "Function:",
+        "description": "<p>It expels heat absorbed by the refrigerant from the building to the outside air, assisting in the condensation process. By ensuring proper airflow over the condenser coil, it plays a vital role in cooling efficiency and system performance.</p>"
+      },
+      { 
+        "subheader": "Location:",
+        "description": "<p>Located in the outdoor section of the RTU, the fan is positioned to directly move air across the condenser coil, facilitating effective heat dissipation and contributing to the unit's overall cooling process.</p>"
+      }
+    ]
+  },
+  
+  "9. Condenser Coil": {
+    "name": "Condenser Coil",
+    "image": "https://cdn.glitch.global/a1b1a317-1c06-4953-8f0a-8c480eeb0bdc/Condensor%20Coil.webp?v=1711456228608",
+    "model": "https://cdn.glitch.global/a1b1a317-1c06-4953-8f0a-8c480eeb0bdc/CondensorCoil.glb?v=1711461599637",
+    "camera_orbit": "100deg 95deg 12m",
+    "camera_target": "0.5m 3m -5.3m",
+    "details": [
+      {
+        "subheader": "Overview",
+        "description": "<p>The condenser coil is part of the refrigeration system and is used to condense refrigerant gas into liquid by removing heat. The condenser coils on Trane units can be either microchannel (MCHE) or round tube plate fin (RTPF) design.</p>"
+      },
+      { 
+        "subheader": "Types:",
+        "description": "<ul><li><b>Microchannel (MCHE) coils</b> have thinner coils walls compared to traditional round tube plate fin coils, but require special care when cleaning.</li><li><b>Round Tube Plate Fin (RTPF) coils</b> have traditional thicker copper tubing and aluminum fins. These can be cleaned using typical coil cleaning detergents.</li></ul>"
+      },
+      { 
+        "subheader": "Cleaning:",
+        "description": "<ul><li><b>MCHE coils</b> should only be cleaned using pressurized water or air up to 600 psi. Do NOT use detergents or chemicals due to the coil material. Clean perpendicular to the coil face.</li><li><b>RTPF coils</b> can be cleaned using detergents like Oakite or Coilox. Rinse thoroughly after cleaning. Solution temperature should not exceed 150°F. Pressure sprayers up to 600 psi can be used by spraying perpendicular to the coil.</li></ul>"
+      }
+    ]
+  },
+  
+  
+  
+  "10. RTRM": {
+    "name": "RTRM",
+    "image": "https://cdn.glitch.global/a1b1a317-1c06-4953-8f0a-8c480eeb0bdc/RTRM.webp?v=1711456242897",
+    "model": "https://cdn.glitch.global/a1b1a317-1c06-4953-8f0a-8c480eeb0bdc/RTRM.glb?v=1711472923721",
+    "camera_orbit": "90deg 75deg 3m",
+    "camera_target": "0m 0m 0m",
+    "details": [
+      {
+        "subheader": "Overview",
+        "description": "<p>The ReliaTel Refrigeration Module (RTRM) is a microelectronic control system used in Trane YSC packaged rooftop units. It is the primary control module for heating and cooling operations and provides various functions such as:</p> <ul> <li>Heating and cooling staging</li> <li>Minimum run times</li> <li>Diagnostics</li> <li>Heat pump defrost control</li> <li>Short cycle timing</li> </ul>"
+      },
+      {
+        "subheader": "Inputs and Outputs",
+        "description": "<p>The RTRM has various inputs and outputs for communication and control, including:</p> <ul> <li>Compressor outputs</li> <li>Outdoor fan relay outputs</li> <li>Low-pressure (LPC) inputs</li> <li>Outdoor air sensor (OAS) input</li> <li>Supply fan output</li> <li>Electric heat outputs (TE* only)</li> <li>TEST mode input</li> <li>Emergency stop input</li> </ul>"
+      },
+      {
+        "subheader": "Default Operations",
+        "description": "<p>The RTRM can accept input from different devices, including:</p> <ul> <li>Mechanical Zone Sensor Module (ZSM)</li> <li>Programmable Zone Sensor</li> <li>Conventional thermostat</li> <li>ICS systems</li> </ul> <p>Depending on the input device, the RTRM operates in different default modes to provide appropriate heating and cooling functions.</p>"
+      },
+      {
+        "subheader": "Additional Information",
+        "description": "<ul> <li>The RTRM is configured through the unit wiring harness.</li> <li>The same module is used for various unit configurations, including gas/electric, cooling only with electric heat, and heat pumps.</li> <li>The RTRM performs self-diagnostic checks upon power initialization to ensure proper operation.</li> <li>The RTRM is mounted in the control panel and factory-wired to the respective internal components.</li> </ul>"
+      },
+      {
+        "subheader": "Benefits",
+        "description": "<p>The RTRM offers several benefits, including:</p> <ul> <li>Increased reliability, performance, and efficiency due to anti-short cycle timing functions</li> <li>Improved unit control and operation through Proportional/Integral control algorithms</li> <li>Flexibility in accepting input from different devices</li> <li>Comprehensive diagnostics and troubleshooting capabilities</li> </ul>"
+      }
+    ]
+  },
+  
+    "11. Control Transformer": {
+    "name": "Control Transformer",
+    "image": "https://cdn.glitch.global/a1b1a317-1c06-4953-8f0a-8c480eeb0bdc/Control%20Transformer.webp?v=1711456229765",
+    "model": "https://cdn.glitch.global/a1b1a317-1c06-4953-8f0a-8c480eeb0bdc/Control%20Transformer%20Low%20Poly.glb?v=1711473465531",
+    "camera_orbit": "45deg 90deg 3m",
+    "camera_target": "0m 0m 0m",
+    "details": [
+      {
+        "subheader": "Overview",
+        "description": "<ul><li>The 24 volt control power transformer provides power to the accessories in the unit.</li><li>Transformers rated greater than 50 VA have internal circuit breakers.</li></ul>"
+      },
+      { 
+        "subheader": "Location:",
+        "description": "<ul><li>The transformer is located in the control panel</li></ul>"
+      },
+      { 
+        "subheader": "Circuit Breaker:",
+        "description": "<ul><li>The circuit breaker is located on the left side of the transformer</li><li>If the circuit breaker trips, turn off all power to the unit before attempting to reset it</li><li>To reset the circuit breaker, press in the black reset button</li></ul>"
+      }
+    ]
+  },
+  
+  "12. Compressor Contactor": {
+    "name": "Compressor Contactor",
+    "image": "https://cdn.glitch.global/a1b1a317-1c06-4953-8f0a-8c480eeb0bdc/Compressor%20Contactor.webp?v=1711473128991",
+    "model": "https://cdn.glitch.global/a1b1a317-1c06-4953-8f0a-8c480eeb0bdc/Compressor%20Contractor.glb?v=1711473300570",
+    "camera_orbit": "90deg 90deg 3m",
+    "camera_target": "0m 0m 0m",
+    "details": [
+      {
+        "subheader": "Overview",
+        "description": "<p>The compressor contactor in Trane YSC packaged rooftop units plays a critical role in the electrical control and operation of the compressors. Here are the key details about the compressor contactor:</p>"
+      },
+      { 
+        "subheader": "Function and Operation::",
+        "description": "<ul><li>The compressor contactor (denoted as CC1, CC2, etc.) is energized by the ReliaTel control module (RTRM) to start the compressor(s) and outdoor fan motor when cooling is required.</li><li>When the RTRM energizes the contactor coil, the contactor's main contacts close to provide power to the compressor and outdoor fan.</li><li>The compressor contactor is wired in series with safety devices like the high pressure control (HPC) and low pressure control (LPC) to prevent the compressor from running under unsafe conditions.</li></ul>"
+      },
+      { 
+        "subheader": "Troubleshooting and Diagnostics:",
+        "description": "<ul><li>If the compressor proving circuit input to the RTRM is open when the contactor is energized, the affected compressor circuit will not run during 'TEST' mode.</li><li>The RTRM can detect if the high pressure control opens while the compressor is running. If this occurs 4 times consecutively, the RTRM will lock out that compressor circuit and provide a diagnostic code.</li><li>Checking the operation of the compressor contactor, along with the associated safety controls, is an important part of diagnosing cooling issues in these units.</li></ul>"
+      }
+    ]
+  },
+  
+    "13. OD Fan Capacitor": {
+    "name": "OD Fan Capacitor",
+    "image": "https://cdn.glitch.global/a1b1a317-1c06-4953-8f0a-8c480eeb0bdc/OD%20fan%20Capacitor.glb1.webp?v=1711535043919",
+    "model": "https://cdn.glitch.global/a1b1a317-1c06-4953-8f0a-8c480eeb0bdc/OD%20Fan%20Capacitor_low%20poly.glb?v=1711474290221",
+    "camera_orbit": "90deg 75deg 3m",
+    "camera_target": "0m 0m 0m",
+    "details": [
+      {
+        "subheader": "Overview:",
+        "description": "<p>The OD (Outdoor) fan capacitor is a critical electrical component in Roof Top Units (RTUs), designed to support the outdoor fan motor operation.</p>"
+      },
+      { 
+        "subheader": "Function:",
+        "description": "<p>It provides the necessary starting torque and continuous energy to maintain the outdoor fan motor's speed, ensuring efficient airflow and heat dissipation. By stabilizing the electrical current, it plays a pivotal role in the fan's performance and the system's overall cooling efficiency.</p>"
+      },
+      { 
+        "subheader": "Location:",
+        "description": "<p>Located within the electrical compartment of the outdoor unit, the OD fan capacitor is directly connected to the outdoor fan motor, facilitating its smooth and efficient operation as part of the unit's heat rejection process.</p>"
+      }
+    ]
+  }
+  
+}
+
+

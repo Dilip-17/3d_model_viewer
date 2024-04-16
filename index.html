@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SkillCat Labs: 3D RTU Demo</title>
+    <!-- SVG Favicon -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="https://cdn.glitch.global/a1b1a317-1c06-4953-8f0a-8c480eeb0bdc/Skillcat%20Helmet.svg"
+    />
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="3D interactive model of a packaged rooftop unit."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link type="text/css" href="./styles.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <model-viewer
+      id="hotspot-camera-view-demo"
+      src="https://cdn.glitch.global/a1b1a317-1c06-4953-8f0a-8c480eeb0bdc/RTU_Optimized_7.glb?v=1713271922183"
+      alt="Packaged Rootop Unit"
+      camera-controls
+      touch-action="manipulation"
+      camera-orbit="90deg 70deg 15m"
+      camera-target="0m 1m 0m"
+      field-of-view="45deg"
+      min-field-of-view="25deg"
+      max-field-of-view="45deg"
+      interpolation-decay="1000"
+      min-camera-orbit="auto auto 10%"
+      shadow-intensity="2"
+      shadow-softness="0.28"
+      environment-image="legacy"
+      tone-mapping="commerce"
+    >
+      <!-- Hotspot 0 -->
+      <button
+        id="1. ECA"
+        class="view-button"
+        slot="hotspot-0"
+        data-position="1.701771074942364m 2.362773767236278m 4.362697250699014m"
+        data-normal="0.3302493961904436m -1.268204625178896e-7m -0.9438937102851312m"
+        data-orbit="-210deg 90deg 1.5m"
+        data-target="1.701771074942364m 2.662773767236278m 4.362697250699014m"
+      >
+        1
+      </button>
+
+      <!-- Hotspot 1 -->
+      <button
+        id="2. Smoke Detector"
+        class="view-button"
+        slot="hotspot-1"
+        data-position="2.8288653350597137m 0.403639883269463m 2.8311100115616505m"
+        data-normal="0.9999999999998714m 3.714032577627718e-7m -3.4528345952428166e-7m"
+        data-orbit="-270deg 90deg 6m"
+        data-target="2.8288653350597137m 0.703639883269463m 2.8311100115616505m"
+      >
+        2
+      </button>
+
+      <!-- Hotspot 2 -->
+      <button
+        id="3. Filters"
+        class="view-button"
+        slot="hotspot-2"
+        data-position="2.205057622919582m 2.6679164269964257m 2.7180468249512355m"
+        data-normal="0.9999999999999859m 1.4392113425475913e-7m -8.757613197123068e-8m"
+        data-orbit="-285deg 90deg 6m"
+        data-target="2.205057622919582m 2.6679164269964257m 2.7180468249512355m"
+      >
+        3
+      </button>
+
+      <!-- Hotspot 3 -->
+      <button
+        id="4. Evaporator Coil"
+        class="view-button"
+        slot="hotspot-3"
+        data-position="2.283286240636797m 3.1070859769992465m 2.3067467800655765m"
+        data-normal="0.9666817093481531m 0.11756577048136704m 0.2273868123327639m"
+        data-orbit="-255deg 90deg 6m"
+        data-target="2.283286240636797m 3.1070859769992465m 2.3067467800655765m"
+      >
+        4
+      </button>
+
+      <!-- Hotspot 4 -->
+      <button
+        id="5. Indoor Blower Fan"
+        class="view-button"
+        slot="hotspot-4"
+        data-position="1.7290818415576998m 3.365166571777251m -0.8730836763218086m"
+        data-normal="0.9561035617631436m -0.26821362736187354m -0.11801452995803924m"
+        data-orbit="-270deg 90deg 6m"
+        data-target="1.7290818415576998m 3.365166571777251m -0.8730836763218086m"
+      >
+        5
+      </button>
+
+      <!-- Hotspot 5 -->
+      <button
+        id="6. Inducer Motor"
+        class="view-button"
+        slot="hotspot-5"
+        data-position="2.316400657957658m 1.4092499826393818m -0.597382782987339m"
+        data-normal="0.9999999999999543m 0m -3.0294625379259807e-7m"
+        data-orbit="-280deg 90deg 6m"
+        data-target="2.316400657957658m 1.4092499826393818m -0.597382782987339m"
+      >
+        6
+      </button>
+
+      <!-- Hotspot 6 -->
+      <button
+        id="7. Compressor"
+        class="view-button"
+        slot="hotspot-6"
+        data-position="1.1899595536304302m 1.5057242703818457m -4.4942291008922375m"
+        data-normal="0.9999999999999543m 0m -3.0294625379259807e-7m"
+        data-orbit="-280deg 90deg 8m"
+        data-target="1.1899595536304302m 1.5057242703818457m -4.4942291008922375m"
+      >
+        7
+      </button>
+
+      <!-- Hotspot 7 -->
+      <button
+        id="8. Outdoor Fan"
+        class="view-button"
+        slot="hotspot-7"
+        data-position="0.013187374551165476m 4.99282585084438m -4.271693562591835m"
+        data-normal="0m 1m 0m"
+        data-orbit="-180deg 40deg 6m"
+        data-target="0.013187374551165476m 4.99282585084438m -4.271693562591835m"
+      >
+        8
+      </button>
+
+      <!-- Hotspot 8 -->
+      <button
+        id="9. Condenser Coil"
+        class="view-button"
+        slot="hotspot-8"
+        data-position="2.2632801971792893m 2.4316683709712392m -6.3281668711861405m"
+        data-normal="5.962436842895094e-9m 5.962436842895094e-9m 1m"
+        data-orbit="-285deg 90deg 7.5m"
+        data-target="2.2632801971792893m 2.4316683709712392m -6.3281668711861405m"
+      >
+        9
+      </button>
+
+      <!-- Hotspot 9 -->
+      <button
+        id="10. RTRM"
+        class="view-button"
+        slot="hotspot-9"
+        data-position="2.4324438205137655m 3.959652689572623m -3.834122665095861m"
+        data-normal="1m 0m 0m"
+        data-orbit="-270deg 90deg 3m"
+        data-target="2.4324438205137655m 3.959652689572623m -3.834122665095861m"
+      >
+        10
+      </button>
+
+      <!-- Hotspot 10 -->
+      <button
+        id="11. Control Transformer"
+        class="view-button"
+        slot="hotspot-10"
+        data-position="3.076546250525887m 3.599714317015673m -3.188603093706539m"
+        data-normal="0.9999999999999911m 0m -1.343588610839583e-7m"
+        data-orbit="-270deg 90deg 3m"
+        data-target="3.076546250525887m 3.599714317015673m -3.188603093706539m"
+      >
+        11
+      </button>
+
+      <!-- Hotspot 11 -->
+      <button
+        id="12. Compressor Contactor"
+        class="view-button"
+        slot="hotspot-11"
+        data-position="2.900756026424664m 4.144150170714136m -5.456198424884438m"
+        data-normal="0.9999999999999541m 0m 3.029462537925981e-7m"
+        data-orbit="-270deg 90deg 3m"
+        data-target="2.900756026424664m 4.144150170714136m -5.456198424884438m"
+      >
+        12
+      </button>
+
+      <!-- Hotspot 12 -->
+      <button
+        id="13. OD Fan Capacitor"
+        class="view-button"
+        slot="hotspot-12"
+        data-position="2.96221884019633m 3.60294246561085m -5.8613519098919395m"
+        data-normal="0.9822904243213404m -0.1873636664737038m 0.0006154446619973076m"
+        data-orbit="-270deg 90deg 3m"
+        data-target="2.96221884019633m 3.60294246561085m -5.8613519098919395m"
+      >
+        13
+      </button>
+    </model-viewer>
+    <!-- Lightbox, hidden by default -->
+    <div id="lightbox" style="display: none">
+      <div id="lightbox-content">
+        <div id="lightbox-left">
+          <model-viewer
+            id="lightbox-model"
+            style="display: none; width: 100%; height: 100%"
+            alt="A 3D model of the component"
+            auto-rotate
+            camera-controls
+            touch-action="manipulation"
+            field-of-view="45deg"
+            min-field-of-view="25deg"
+            max-field-of-view="45deg"
+            interpolation-decay="1000"
+            min-camera-orbit="auto auto 10%"
+            shadow-intensity="2"
+            shadow-softness="0.28"
+            environment-image="legacy"
+            tone-mapping="commerce"
+          >
+          </model-viewer>
+          <img id="lightbox-image" alt="Component Image" />
+          <button class="lightbox-btn" id="3d-view-btn">
+            <div class="btn-content-horizontal">
+              <!-- Updated class name -->
+              <img
+                src="https://cdn.glitch.global/a1b1a317-1c06-4953-8f0a-8c480eeb0bdc/3d-view.svg"
+                class="icon-horizontal"
+                alt="3d view icon"
+              />
+              <span>View in 3D</span>
+            </div>
+          </button>
+        </div>
+        <div id="lightbox-right">
+          <h2 id="lightbox-name"></h2>
+          <div id="lightbox-details"></div>
+        </div>
+        <button id="lightbox-close" onclick="closeLightbox()">×</button>
+      </div>
+    </div>
+
+
+    <!-- Sidebar -->
+    <div id = "sidebar" class="sidebar">
+      <!-- Sidebar header-->
+      <h3 id="sidebar-header">Trane YSC Unit</h3>
+      <hr />
+
+      <!-- Collapsible section-->
+      <div class="collapse-section">
+        <div class="collapse-header">
+          Evaporator Section
+          <img
+            src="https://cdn.glitch.global/a1b1a317-1c06-4953-8f0a-8c480eeb0bdc/expand_more.svg"
+            class="collapse-icon"
+            alt="Collapse icon"
+          />
+        </div>
+        <ol class="sidebar-list">
+          <li>1. ECA</li>
+          <li>2. Smoke Detector</li>
+          <li>3. Filters</li>
+          <li>4. Evaporator Coil</li>
+        </ol>
+      </div>
+
+      <!-- Collapsible section-->
+      <div class="collapse-section">
+        <div class="collapse-header">
+          ID Fan Section
+          <img
+            src="https://cdn.glitch.global/a1b1a317-1c06-4953-8f0a-8c480eeb0bdc/expand_more.svg"
+            class="collapse-icon"
+            alt="Collapse icon"
+          />
+        </div>
+        <ol class="sidebar-list">
+          <li>5. Indoor Blower Fan</li>
+        </ol>
+      </div>
+
+      <!-- Collapsible section-->
+      <div class="collapse-section">
+        <div class="collapse-header">
+          Heating Section
+          <img
+            src="https://cdn.glitch.global/a1b1a317-1c06-4953-8f0a-8c480eeb0bdc/expand_more.svg"
+            class="collapse-icon"
+            alt="Collapse icon"
+          />
+        </div>
+        <ol class="sidebar-list">
+          <li>6. Inducer Motor</li>
+        </ol>
+      </div>
+
+      <!-- Collapsible section-->
+      <div class="collapse-section">
+        <div class="collapse-header">
+          Compressor Section
+          <img
+            src="https://cdn.glitch.global/a1b1a317-1c06-4953-8f0a-8c480eeb0bdc/expand_more.svg"
+            class="collapse-icon"
+            alt="Collapse icon"
+          />
+        </div>
+        <ol class="sidebar-list">
+          <li>7. Compressor</li>
+          <li>8. Outdoor Fan</li>
+          <li>9. Condenser Coil</li>
+        </ol>
+      </div>
+
+      <!-- Collapsible section-->
+      <div class="collapse-section">
+        <div class="collapse-header">
+          Control Panel Section
+          <img
+            src="https://cdn.glitch.global/a1b1a317-1c06-4953-8f0a-8c480eeb0bdc/expand_more.svg"
+            class="collapse-icon"
+            alt="Collapse icon"
+          />
+        </div>
+        <ol class="sidebar-list">
+          <li>10. RTRM</li>
+          <li>11. Control Transformer</li>
+          <li>12. Compressor Contactor</li>
+          <li>13. OD Fan Capacitor</li>
+        </ol>
+      </div>
+
+      <!-- Collapsible section-->
+      <div class="collapse-section">
+        <div class="collapse-header">
+          Components to be added
+          <img
+            src="https://cdn.glitch.global/a1b1a317-1c06-4953-8f0a-8c480eeb0bdc/expand_more.svg"
+            class="collapse-icon"
+            alt="Collapse icon"
+          />
+        </div>
+        <ol class="sidebar-list">
+          <li>14. Drain Pan</li>
+          <li>15. OD Air Damper</li>
+          <li>16. Outside air humidity sensor - OHS</li>
+          <li>17. Return air humidity sensor - RHS</li>
+          <li>18. Return air temp sensor - RAS</li>
+          <li>19. Clogged filter switch- CFS</li>
+          <li>20. Frostat - FOS</li>
+          <li>21. Supply air smoke detector - SASD</li>
+          <li>22. Reliatel options module - RTOM</li>
+          <li>23. Mixed air temperature sensor - MAS</li>
+          <li>24. Discharge air sensor - DTS</li>
+          <li>25. Temp limit 2 - TCO2</li>
+          <li>26. Fan failure switch - FFS</li>
+          <li>27. Heat exchanger</li>
+          <li>28. Ignitor</li>
+          <li>29. Gas Valve - GV</li>
+          <li>30. Flame detector - FD</li>
+          <li>31. Pressure switch - PS</li>
+          <li>32. Flame rollout switch - FR</li>
+          <li>33. Temp limit 1 - TCO1</li>
+          <li>34. Crankcase heater - CCH</li>
+          <li>35. Coil Temp limit switch</li>
+          <li>36. Outside air temp sensor - OAS</li>
+          <li>37. High pressure cutout - HPC</li>
+          <li>38. Low pressure cutout - LPC</li>
+          <li>39. Ignition Module - IGN</li>
+          <li>40. LCI Interface - COMM</li>
+          <li>41. Fan Relay - F</li>
+          <li>42. Inducer Transformer</li>
+          <li>43. Low voltage terminal board - LTB</li>
+          <li>44. Piping</li>
+          <li>45. Wiring</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Toggle Sidebar Button -->
+    <button id="toggle-sidebar">
+      <img class="toggle-sidebar-icon rotate-icon" 
+           src="https://cdn.glitch.global/a1b1a317-1c06-4953-8f0a-8c480eeb0bdc/chevron_right.svg" />
+    </button>
+
+    <!-- Bottom Menu -->
+    <div class="bottom-menu">
+      <button class="menu-btn" id="home-btn">
+        <div class="btn-content-horizontal">
+          <img
+            src="https://cdn.glitch.global/a1b1a317-1c06-4953-8f0a-8c480eeb0bdc/home.svg"
+            class="icon-horizontal"
+            alt="Home icon"
+          />
+          <span>Home</span>
+        </div>
+      </button>
+      <div class="divider"></div>
+      <button class="menu-btn" id="show-btn">
+        <div class="btn-content-horizontal">
+          <img
+            src="https://cdn.glitch.global/a1b1a317-1c06-4953-8f0a-8c480eeb0bdc/remove_red_eye.svg"
+            class="icon-horizontal"
+            alt="Show icon"
+          />
+          <span>Hide</span>
+        </div>
+      </button>
+      <div class="divider"></div>
+      <button class="menu-btn" id="play-btn">
+        <div class="btn-content-horizontal">
+          <img
+            src="https://cdn.glitch.global/a1b1a317-1c06-4953-8f0a-8c480eeb0bdc/play_arrow.svg?v=1712686105394"
+            class="icon-horizontal"
+            alt="Play icon"
+          />
+          <span>Play</span>
+        </div>
+      </button>
+    </div>
+
+    <!-- Fullscreen button element-->
+    <div>
+      <button id="full-screen-btn">
+        <img
+          src="https://cdn.glitch.global/a1b1a317-1c06-4953-8f0a-8c480eeb0bdc/fullscreen.svg"
+          alt="Open Fullscreen button"
+        />
+      </button>
+    </div>
+    <!--button id="stopButton">Stop Animation</button-->
+
+    <!-- Rotate device screen-->
+    <div id="rotateDevicePrompt" style="display: none">
+      <button id="rotate-popup-close-btn">×</button>
+      <img
+        src="https://cdn.glitch.global/a1b1a317-1c06-4953-8f0a-8c480eeb0bdc/screen_rotation.svg"
+        alt="Rotate Screen"
+      />
+      <p>
+        For optimal viewing, kindly rotate your screen to landscape mode.
+      </p>
+    </div>
+
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

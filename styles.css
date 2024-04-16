@@ -1,0 +1,370 @@
+#toggle-sidebar {
+  position: absolute;
+  top: 22px;
+  right: 10px;
+  border: none;
+  background: none;
+  font-size: 10px;
+  color: #333333;
+  cursor: pointer;
+}
+/* Rotation effect */
+.rotate-icon {
+  transition: transform 0.3s ease-in-out;
+}
+/* Rotated state */
+.rotate-icon.rotate {
+  transform: rotate(180deg);
+  border: 1px solid #E4E4E4; /* Example border */
+  background-color: #f4f4f4; /* Example background color */
+  border-radius: 4px; /* Optional: if you want rounded corners */
+  /*box-sizing: border-box; /* To include padding and border in the element's total width and height */
+
+}
+
+
+.sidebar {
+  width: 20%; /* Adjust the width of the sidebar */
+  height: 100vh; /* Sidebar height to fill the viewport height */
+  overflow-y: auto; /* Enable vertical scrolling */
+  position: fixed; /* Sidebar position fixed on the screen */
+  right: 0; /* Align the sidebar to the right */
+  top: 0; /* Align the sidebar to the top */
+  background-color: #f4f4f4; /* Background color of the sidebar */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: add shadow for better visibility */
+  /*border: 2px solid #cccccc;*/
+}
+
+.sidebar-list {
+  display: none; /* Initially hide the lists */
+  list-style-type: none; /* Remove default list styling */
+  /*padding-left: 0px; /* Indent the list items */
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  font-family: "Fira Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #666666;
+  background-color: #f4f4f4;
+}
+
+/* Highlighting active item */
+.sidebar-list li.active {
+  background-color: #fdeae4; /* Light orange background */
+  color: #f05523; /* Orange font color*/
+}
+
+.sidebar-list li {
+  padding: 10px; /* Add padding for each list item for better readability */
+  padding-left: 20px;
+}
+
+.sidebar h3 {
+  padding: 5px; /* Add padding for each header in sidebar */
+  padding-left: 10px;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #535353;
+}
+
+.sidebar hr {
+  border: 0;
+  height: 1px;
+  background-color: #cccccc; /* Customize the color as needed */
+  margin: 0px 0; /* Adjust spacing around the divider */
+}
+
+.collapse-header {
+  display: flex; /* Enables Flexbox layout */
+  align-items: center; /* Vertically centers the flex items */
+  justify-content: space-between; /* Aligns text to the left and icon to the right */
+  cursor: pointer;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 10px; /* Ensure there's padding on the right so the icon isn't flush against the edge */
+  background-color: #f4f4f4; /* Light grey background */
+  margin-top: 0px; /* Spacing between sections */
+  font-family: "Fira Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #535353;
+}
+
+/* Optional: Styling for when a section is active/open */
+.active + .sidebar-list {
+  display: block;
+}
+
+.collapse-header .collapse-icon {
+  float: right; /* Position the icon to the right */
+  transition: transform 0.3s ease; /* Smooth transformation */
+}
+
+/* Rotate icon for active headers */
+.active .collapse-icon {
+  transform: rotate(180deg); /* Adjust according to your icons */
+}
+
+.bottom-menu {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex; /* Updated to flex to better control child elements */
+  justify-content: center;
+  background: #ffffff;
+  padding: 5px 0;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.menu-btn {
+  display: flex; /* Make button flex container */
+  flex-direction: column; /* Stack icon and label vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  background: #ffffff;
+  border: none;
+  padding: 2px;
+  margin: 0 20px;
+  cursor: pointer;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #f05523;
+}
+
+
+
+.btn-content {
+  display: flex; /* Align icon and text */
+  flex-direction: column; /* Stack them vertically */
+  align-items: center; /* Center align */
+}
+
+.icon {
+  margin-bottom: 0px; /* Space between icon and label */
+}
+
+.divider {
+  width: 1px; /* This makes the divider look like a line */
+  background-color: #cccccc; /* This is the color of the divider */
+}
+
+#hotspot-camera-view-demo {
+  width: 80%;
+  height: 95vh;
+  border: 1px solid #f1f1f1;
+}
+
+.view-button {
+  background: #f05523;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+#lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw; /* Cover the full viewport width */
+  height: 100vh; /* Cover the full viewport height */
+  background: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+  display: none; /* Hide by default */
+  align-items: center;
+  justify-content: center;
+  z-index: 2000; /* High z-index to be on top of other content */
+}
+
+#lightbox-content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  position: relative;
+  width: 80%; /* Width of the content box */
+  height: 80%; /* Height of the content box */
+  max-width: 1200px; /* Maximum width */
+  box-sizing: border-box; /* Include padding and border in the width and height */
+}
+
+#lightbox-left {
+  width: 50%;
+  height: 100%;
+  overflow: hidden; /* Changed to hidden to prevent scrolling */
+  position: relative; /* Added to make it a relative parent for absolute positioning */
+}
+
+#lightbox-right {
+  width: 50%;
+  height: 100%;
+  overflow: auto;
+  margin-left: 20px;
+}
+
+#lightbox-image {
+  max-width: 90%; /* Set maximum width to 90% of the container */
+  max-height: 90%; /* Set maximum height to 90% of the container */
+  width: auto; /* Adjust width automatically to maintain aspect ratio */
+  height: auto; /* Adjust height automatically to maintain aspect ratio */
+  object-fit: contain; /* Ensure the content is scaled to maintain its aspect ratio while fitting within the element's content box */
+  display: block; /* Block display to apply margin: auto */
+  margin: auto; /* Center the image horizontally and vertically */
+  position: absolute; /* Positioning context to center */
+  top: 0;
+  bottom: 0; /* Top and bottom set to 0 */
+  left: 0;
+  right: 0; /* Left and right set to 0 */
+}
+
+.lightbox-btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0px; /* Adjust margin as needed for spacing from corner */
+  display: flex; /* Ensure it's a flex container */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  background: None; /* Background color */
+  padding: 5px 10px;
+  border: 1px solid #f05523;
+  border-radius: 10px;
+  /*padding: 2px; /* Padding around content */
+  cursor: pointer; /* Cursor pointer for better UX */
+  font-family: "Fira Sans", sans-serif; /* Font styling */
+  font-size: 14px; /* Font size */
+  font-weight: 600; /* Font weight */
+  color: #f05523; /* Font color */
+}
+
+/* Adjusted for horizontal layout */
+.btn-content-horizontal {
+  display: flex; /* Continue using flex for alignment */
+  flex-direction: row; /* Align items horizontally */
+  align-items: center; /* Center items vertically within the button */
+  gap: 5px; /* Optional: Use gap for spacing between icon and text instead of margin */
+}
+
+.icon-horizontal {
+  margin-right: 5px; /* Adjust as needed for space between icon and text */
+  /* margin-bottom: 0; not needed since we're aligning items horizontally */
+}
+
+/* Apply these styles specifically for the 3D view button to match bottom menu style */
+#3d-view-btn {
+  display: flex; /* Ensure it's a flex container */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  background: #ffffff; /* Background color */
+  border: none; /* No border for the button */
+  padding: 2px; /* Padding around content */
+  margin: 0 20px; /* Margin to match bottom menu buttons, adjust as needed */
+  cursor: pointer; /* Cursor pointer for better UX */
+  font-family: "Fira Sans", sans-serif; /* Font styling */
+  font-size: 14px; /* Font size */
+  font-weight: 600; /* Font weight */
+  color: #f05523; /* Font color */
+}
+
+#lightbox-name {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-family: Futura, Helvetica Neue, sans-serif;
+  color: #f05523;
+}
+
+#lightbox-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+  background: none;
+  font-size: 30px;
+  color: #333333;
+  cursor: pointer;
+}
+
+.lightbox-subheader {
+  font-size: 20px;
+  /*margin-bottom: 20px;*/
+  font-family: Futura, Helvetica Neue, sans-serif;
+}
+
+.lightbox-description {
+  font-family: Futura, Helvetica Neue, sans-serif;
+  font-size: 14px;
+}
+
+#full-screen-btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border: none;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  background: none;
+  cursor: pointer;
+}
+
+#rotateDevicePrompt {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.95);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+  z-index: 1000;
+  font-family: "Fira Sans", sans-serif; /* Font styling */
+  font-size: 20px; /* Font size */
+  font-weight: 400; /* Font weight */
+}
+
+#rotateDevicePrompt img {
+  max-width: 100px;
+  margin-bottom: 20px;
+  width: 50%;
+  animation: rotateImage 3s linear infinite;
+}
+
+#rotateDevicePrompt p {
+  padding: 20px;
+}
+
+@keyframes rotateImage {
+  0% {
+    transform: rotate(30deg);
+  }
+  50% {
+    transform: rotate(-45deg);
+  }
+  100% {
+    transform: rotate(30deg);
+  }
+}
+
+#rotate-popup-close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+  background: none;
+  font-size: 30px;
+  color: #333333;
+  cursor: pointer;
+}
+
